@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Styles -->
         <style>
             html, body {
@@ -77,19 +77,29 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1>欢迎来到 Easy Mock Server</h1>
+                        <p>请先阅读下面的介绍，学习下如何使用</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3>Project</h3>
+                            <p>Project是为了方便管理，每个Project下面包含了所有该Project下的Path和mock的数据</p>
+                            <p>比如，项目可以分为快手主App、快手小游戏等</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Path</h3>
+                            <p>Path是请求的Path</p>
+                            <p>比如/rest/n/live/startPush 是开播请求的Path，每个Project可以包含多个Path</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Case</h3>
+                            <p>Case是你想要返回的数据</p>
+                            <p>每个Path可以包含多个Case，但是同一时刻只能返回某一条数据</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
         </div>
     </body>
 </html>
